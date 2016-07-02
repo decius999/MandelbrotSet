@@ -5,6 +5,18 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MandelbrotSet.Core", "MandelbrotSet.Core\MandelbrotSet.Core.csproj", "{762B0FF3-85F1-4E45-8452-6F1B9B75762B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mandelbrot.Actor", "Mandelbrot.Actor\Mandelbrot.Actor.csproj", "{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MandelbrotSet.Presentation", "MandelbrotSet.Presentation\MandelbrotSet.Presentation.csproj", "{62E8868C-3932-43E1-A418-1874DA6FE9D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Core", "01_Core", "{25503651-6DB6-42D8-B162-6FEDB889056E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Presentation", "02_Presentation", "{D0457256-8C7F-43B2-8B1E-D6BE0B83931F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Business", "03_Business", "{7DD46F68-2D0C-4D9B-89AF-296F9E08DA3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mandelbrot.Business", "Mandelbrot.Business\Mandelbrot.Business.csproj", "{4AFA902E-C67B-4338-B29B-CFFB9401245A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +27,26 @@ Global
 		{762B0FF3-85F1-4E45-8452-6F1B9B75762B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{762B0FF3-85F1-4E45-8452-6F1B9B75762B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{762B0FF3-85F1-4E45-8452-6F1B9B75762B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E8868C-3932-43E1-A418-1874DA6FE9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E8868C-3932-43E1-A418-1874DA6FE9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E8868C-3932-43E1-A418-1874DA6FE9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E8868C-3932-43E1-A418-1874DA6FE9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFA902E-C67B-4338-B29B-CFFB9401245A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFA902E-C67B-4338-B29B-CFFB9401245A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFA902E-C67B-4338-B29B-CFFB9401245A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFA902E-C67B-4338-B29B-CFFB9401245A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{762B0FF3-85F1-4E45-8452-6F1B9B75762B} = {25503651-6DB6-42D8-B162-6FEDB889056E}
+		{AF933E2B-8119-4C2F-A504-2F7B4DD78FFE} = {7DD46F68-2D0C-4D9B-89AF-296F9E08DA3D}
+		{62E8868C-3932-43E1-A418-1874DA6FE9D6} = {D0457256-8C7F-43B2-8B1E-D6BE0B83931F}
+		{4AFA902E-C67B-4338-B29B-CFFB9401245A} = {7DD46F68-2D0C-4D9B-89AF-296F9E08DA3D}
 	EndGlobalSection
 EndGlobal

@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{762B0FF3-85F1-4E45-8452-6F1B9B75762B}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{73C4F35F-655B-44F4-9F16-A6229FFF0DFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MandelbrotSet.Core</RootNamespace>
-    <AssemblyName>MandelbrotSet.Core</AssemblyName>
+    <RootNamespace>Mandelbrot.Test</RootNamespace>
+    <AssemblyName>Mandelbrot.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -72,18 +75,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\ComplexNumber.cs" />
-    <Compile Include="Enums.cs" />
-    <Compile Include="Interfaces\IActorService.cs" />
-    <Compile Include="Interfaces\IMandelbrotService.cs" />
-    <Compile Include="Entities\MandelbrotCalcJobMessage.cs" />
-    <Compile Include="Entities\MandelbrotResult.cs" />
-    <Compile Include="Interfaces\IMandelbrotSetCalcJobCreator.cs" />
-    <Compile Include="Interfaces\IMandelbrotSetCalculator.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mandelbrot.Business\Mandelbrot.Business.csproj">
+      <Project>{4afa902e-c67b-4338-b29b-cffb9401245a}</Project>
+      <Name>Mandelbrot.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MandelbrotSet.Core\MandelbrotSet.Core.csproj">
+      <Project>{762b0ff3-85f1-4e45-8452-6f1b9b75762b}</Project>
+      <Name>MandelbrotSet.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
